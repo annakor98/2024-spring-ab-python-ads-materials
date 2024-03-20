@@ -1,0 +1,16 @@
+apiVersion: machinelearning.seldon.io/v1alpha2
+kind: SeldonDeployment
+metadata:
+  name: iris-predictor
+spec:
+  predictors:
+    - componentSpecs:
+        - spec:
+            containers:
+              - image: annakor98/iris_seldon
+                name: iris-predictor
+                imagePullPolicy: Always
+      graph:
+        name: iris-predictor
+        type: MODEL
+      name: iris-predictor
