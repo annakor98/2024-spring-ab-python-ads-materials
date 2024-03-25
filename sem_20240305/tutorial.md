@@ -2,6 +2,7 @@
 ## Streamlit
 
 Обучение и инференс модели - см. [train.py](train.py)
+
 Приложение на `Streamlit` - см. [app.py](app.py)
 
 Для запуска приложения:
