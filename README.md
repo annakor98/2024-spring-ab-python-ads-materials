@@ -5,3 +5,5 @@
 * Cеминар от 5 марта - [Streamlit](sem_20240305/tutorial.md)
 
 * Семинар от 19 марта - [MLServer + SeldonCore](sem_20240319/tutorial.md)
+
+* Семинар от 26 марта - [Prometheus + Grafana](sem_20240326/tutorial.md)
