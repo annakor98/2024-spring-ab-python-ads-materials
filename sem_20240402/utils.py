@@ -4,7 +4,7 @@ import redis
 import pika
 from prometheus_client import start_http_server, Gauge
 
-#redis_instance = redis.Redis(host="redis-master.default.svc.cluster.local", port=6379, db=0)
+
 redis_instance = redis.Redis(host="localhost", port=6379, db=0)
 
 start_http_server(6000)
@@ -12,7 +12,6 @@ start_http_server(6000)
 def publish_to_rabbitMQ(data):
     credentials = pika.PlainCredentials('admin', 'admin')
     connection = pika.BlockingConnection(pika.ConnectionParameters(
-        #"hello-world.default.svc.cluster.local",
         "localhost",
         5672,
         credentials=credentials,

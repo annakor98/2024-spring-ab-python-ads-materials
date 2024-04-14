@@ -27,7 +27,6 @@ def callback(ch, method, properties, body):
 def start_consumer():
     credentials = pika.PlainCredentials('admin', 'admin')
     connection = pika.BlockingConnection(pika.ConnectionParameters(
-        #"hello-world.default.svc.cluster.local",
         "localhost",
         5672,
         credentials=credentials,
