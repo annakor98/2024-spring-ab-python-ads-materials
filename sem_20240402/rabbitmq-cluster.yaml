@@ -1,0 +1,9 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: RabbitmqCluster
+metadata:
+  name: hello-world
+spec:
+  rabbitmq:
+    additionalConfig: |
+      default_user=admin
+      default_pass=admin
